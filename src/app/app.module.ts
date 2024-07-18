@@ -8,6 +8,7 @@ import { MaterialModule } from './material/material.module';
 import { HeaderComponent } from './components/header/header.component';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { TodoComponent } from './components/todo/todo.component';
+import { NewTodoFileComponent } from './components/new-todo-file/new-todo-file.component';
 
 
 
@@ -16,7 +17,8 @@ import { TodoComponent } from './components/todo/todo.component';
     AppComponent,
     HeaderComponent,
     TodoListComponent,
-    TodoComponent
+    TodoComponent,
+    NewTodoFileComponent
   ],
   imports: [
     BrowserModule,

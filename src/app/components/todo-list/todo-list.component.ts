@@ -18,6 +18,10 @@ export class TodoListComponent implements OnInit, OnDestroy {
 
   public displayTodo(todo: ITodo, index: number): void {
     this.TodoService.setSingleTodo(todo);
+    this.todos.forEach(todo => {
+      if(todo.selected)
+        todo.selected = false;
+    })
     todo.selected = true;
   }
 

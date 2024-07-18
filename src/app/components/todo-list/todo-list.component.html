@@ -1,6 +1,6 @@
 <div class="todo-list">
   <div class="todo-item" *ngFor="let item of todos; let i = index">
-    <mat-card appearance="outlined" (click)="displayTodo(item, i)">
+    <mat-card appearance="outlined" *ngIf="!item.isArchived" [ngClass]="{selected: item.selected, completed: item.isCompleted}" (click)="displayTodo(item, i)">
       <mat-card-content>
         <mat-card-title>{{item.title}}</mat-card-title>
         <mat-card-subtitle>{{item.description}}</mat-card-subtitle>
